@@ -2,75 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'everettjana';
-  src: url('/fonts/everett-jana-webfont.woff2') format('woff2'),
-       url('/fonts/everett-jana-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'everettthin';
-  src: url('/fonts/everett-thin-webfont.woff2') format('woff2'),
-       url('/fonts/everett-thin-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'everettlight';
-  src: url('/fonts/everett-light-webfont.woff2') format('woff2'),
-       url('/fonts/everett-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'everettultralight';
-  src: url('/fonts/everett-ultralight-webfont.woff2') format('woff2'),
-       url('/fonts/everett-ultralight-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'everettmedium';
-  src: url('/fonts/everett-medium-webfont.woff2') format('woff2'),
-       url('/fonts/everett-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'everettregular';
-  src: url('/fonts/everett-regular-webfont.woff2') format('woff2'),
-       url('/fonts/everett-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserratlight';
-  src: url('/fonts/montserrat-light.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserratthin';
-  src: url('/fonts/montserrat-thin.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'montserratregular';
-  src: url('/fonts/montserrat-regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 html {
   scroll-behavior:smooth;
 }
@@ -81,10 +12,6 @@ b {
 
 a:hover {
   cursor: pointer;
-}
-
-nav {
-  @apply flex w-full h-[10vh] bg-home-overlay items-center justify-around sm:justify-end sm:gap-4 md:gap-8 px-4 z-20 sticky top-0;
 }
 
 .btn {

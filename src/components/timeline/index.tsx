@@ -1,5 +1,3 @@
-import './timeline.css';
-
 import timelinedata from './data.json';
 
 function Timeline(): JSX.Element {

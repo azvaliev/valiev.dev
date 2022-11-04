@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import type { PropsWithChildren } from "react";
 import Navbar from "./components/navbar";
 import './index.css';
 
@@ -92,6 +92,47 @@ function Root({ children }: PropsWithChildren): JSX.Element {
           content="/icons/browserconfig.xml"
         />
         <meta name="theme-color" content="#000000" />
+        <style dangerouslySetInnerHTML={{ __html: `
+          @font-face {
+            font-family: 'everettthin';
+            src: url('/fonts/everett-thin-webfont.woff2') format('woff2'),
+                 url('/fonts/everett-thin-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: 'everettlight';
+            src: url('/fonts/everett-light-webfont.woff2') format('woff2'),
+                 url('/fonts/everett-light-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: 'everettultralight';
+            src: url('/fonts/everett-ultralight-webfont.woff2') format('woff2'),
+                 url('/fonts/everett-ultralight-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: 'everettmedium';
+            src: url('/fonts/everett-medium-webfont.woff2') format('woff2'),
+                 url('/fonts/everett-medium-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: 'everettregular';
+            src: url('/fonts/everett-regular-webfont.woff2') format('woff2'),
+                 url('/fonts/everett-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+          }
+        `}} />
       </head>
       <body>
         <Navbar />

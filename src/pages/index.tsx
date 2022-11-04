@@ -91,6 +91,6 @@ function Home (): JSX.Element {
       </Section>
     </>
   );
-};
+}
 
 export default Home;
