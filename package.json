@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next dev & npx wait-on http-get://localhost:3000/api/render && npx wait-on -d 20000 http-get://localhost:3000/img/techicons/html.webp",
+    "build": "next dev & npx wait-on -d 20000 http-get://localhost:3000/api/render",
     "dev": "next dev",
     "lint": "next lint",
     "tailwind": "npx tailwindcss build -i src/index.css --content dist/index.html  -o ./dist/app.css --minify"
