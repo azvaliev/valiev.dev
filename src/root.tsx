@@ -66,6 +66,10 @@ function Root({ children }: PropsWithChildren): JSX.Element {
           content="/icons/browserconfig.xml"
         />
         <meta name="theme-color" content="#000000" />
+        <link rel="preload" href="/fonts/everett-thin-webfont.woff2" as="font" type="font/woff2" crossOrigin="true" />
+        <link rel="preload" href="/fonts/everett-ultralight-webfont.woff2" as="font" type="font/woff2" crossOrigin="true" />
+        <link rel="preload" href="/fonts/everett-light-webfont.woff2" as="font" type="font/woff2" crossOrigin="true" />
+        <link rel="preload" href="/fonts/everett-regular-webfont.woff2" as="font" type="font/woff2" crossOrigin="true" />
         <link rel="stylesheet" href="/app.css" />
       </head>
       <body>
@@ -80,7 +84,6 @@ function Root({ children }: PropsWithChildren): JSX.Element {
             font-weight: normal;
             font-style: normal;
             font-display: swap;
-
           }
 
           @font-face {
