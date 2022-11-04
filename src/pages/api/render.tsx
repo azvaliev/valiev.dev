@@ -14,6 +14,13 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
     </Root>
   )
 
+  const portfolio = fs.readFileSync('src/pages/api/portfolio.html').toString();
+  const portfolioHTML = ReactDOMServer.renderToStaticMarkup(
+    <Root>
+      <div id="__next" dangerouslySetInnerHTML={{ __html: portfolio }} />
+    </Root>
+  )
+
   if (!fs.existsSync('dist')) {
     console.info('making dist...');
     execSync('mkdir dist');
@@ -21,6 +28,7 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
 
   console.info('writing html');
   fs.writeFileSync('dist/index.html', `<!DOCTYPE html>${indexHTML}`);
+  fs.writeFileSync('dist/portfolio.html', `<!DOCTYPE html>${portfolioHTML}`);
 
   console.info('copying public');
   execSync('cp -R public/* dist/');

@@ -6,7 +6,7 @@
     "build": "next dev & npx wait-on -d 20000 http-get://localhost:3000/api/render",
     "dev": "next dev",
     "lint": "next lint",
-    "tailwind": "npx tailwindcss build -i src/index.css --content dist/index.html  -o ./dist/app.css --minify"
+    "tailwind": "npx tailwindcss build -i src/index.css -o ./dist/app.css --minify"
   },
   "dependencies": {
     "next": "13.0.1",
