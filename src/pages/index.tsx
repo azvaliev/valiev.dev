@@ -1,3 +1,4 @@
+import Testimonials from "../components/testimonials";
 import Timeline from "../components/timeline";
 
 function Home (): JSX.Element {
@@ -38,6 +39,7 @@ function Home (): JSX.Element {
         </div>
       </main>
       <Timeline />
+      <Testimonials />
     </>
   );
 };
