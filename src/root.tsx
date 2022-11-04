@@ -8,7 +8,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
       <head>
         <title>Azat Valiev - Software Engineer</title>
         <meta name="description" content={`
-          Are you looking for a skilled Web Developer to build/improve your websites or applications?
+          Are you looking for a skilled Software Engineer to build/improve your websites or applications?
           My name is Azat, and I've been doing just that for individuals and businesses for 4+ years
         `} />
         <meta
@@ -21,7 +21,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
 
         <meta
           property="og:title"
-          content="Azat Valiev - React Developer"
+          content="Azat Valiev - Software Engineer"
         />
         <meta
           property="og:description"
