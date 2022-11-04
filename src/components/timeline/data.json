@@ -52,7 +52,7 @@
       "js"
     ]
   }, {
-    "title": "Diving into Web",
+    "title": "Diving into Web @ M2 Labs",
     "desc": "Networking with local developers lead me to land a position with M2 Labs, working on a project that analyzed Git repositories and provided data about contributions",
     "date": "June 2018",
     "cta": {
@@ -80,10 +80,10 @@
       "react",
       "next",
       "typescript",
+      "sass",
       "golang",
       "node",
       "mysql",
-      "mongodb",
       "aws"
     ]
   }, {
@@ -98,6 +98,7 @@
     "icons": [
       "react",
       "next",
+      "js",
       "typescript",
       "css",
       "node",
