@@ -71,6 +71,14 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
+b {
+  font-weight: 600;
+}
+
 a:hover {
   cursor: pointer;
 }
