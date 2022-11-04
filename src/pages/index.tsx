@@ -1,4 +1,4 @@
-const Home = () => {
+function Home (): JSX.Element {
   return (
     <main className="flex h-[90vh] w-full ">
       <div className="h-[100vh] w-full absolute top-0 left-0 z-0" aria-hidden="true">
@@ -13,7 +13,7 @@ const Home = () => {
           <h1 className="text-3xl text-center font-[everettultralight]">
             Hi, my name is Azat
           </h1>
-          <h2 className="text-2xl text-center font-[everettregular] my-4">
+          <h2 className="text-2xl text-center font-[everettregular] mt-4 mb-3">
             <div className="px-6">
             I'm an Austin based Software Engineer with experience in&nbsp;
             </div>

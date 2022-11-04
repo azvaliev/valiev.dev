@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 import Navbar from "./components/navbar";
+import './index.css';
 
 function Root({ children }: PropsWithChildren): JSX.Element {
   return (
@@ -10,7 +11,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
           Are you looking for a skilled Web Developer to build/improve your websites or applications?
           My name is Azat, and I've been doing just that for individuals and businesses for 4+ years
         `} />
-					<link
+        <link
           rel="preconnect"
           href="https://fonts.googleapis.com"
         />

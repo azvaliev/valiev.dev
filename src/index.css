@@ -75,6 +75,10 @@ a:hover {
   cursor: pointer;
 }
 
+nav {
+  @apply flex w-full h-[10vh] bg-home-overlay items-center justify-around sm:justify-end sm:gap-4 md:gap-8 px-4 z-20 sticky top-0;
+}
+
 .btn {
   @apply text-2xl pt-2 pb-1 px-4 mx-auto font-[everettlight] border-[1px] border-black rounded-md transition-colors;
   transition-duration: 300ms;
@@ -88,6 +92,7 @@ ul.tech-list {
   -webkit-animation: scrollUp 10s linear infinite normal;
   animation: scrollUp 10s linear infinite normal;
 }
+
 ul.tech-list > li {
   @apply opacity-100 h-7 p-0 m-2.5 list-none border-b-[1px] border-black;
 }
