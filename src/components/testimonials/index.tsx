@@ -24,7 +24,7 @@ function Testimonials(): JSX.Element {
               {testimonial.title}
             </h4>
           </div>
-        ))} 
+        ))}
       </div>
     </section>
   )
