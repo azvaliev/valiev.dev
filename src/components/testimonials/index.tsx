@@ -24,7 +24,7 @@ function Testimonials(): JSX.Element {
               alt={testimonial.author}
               className="w-[70%] mx-auto mb-4 mt-auto rounded-full"
             />
-            <h3 className="font-[everettmedium] text-2xl underline">
+            <h3 className="font-[everettregular] text-2xl underline">
               {testimonial.author}
             </h3>
             <h4 className="italic text-xl font-extralight">

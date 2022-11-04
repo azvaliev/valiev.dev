@@ -22,13 +22,13 @@ function Timeline(): JSX.Element {
             >
               {point.title}
             </h3>
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-normal text-gray-800">
               {point.desc}
             </p>
             <a
               href={point.cta.link}
               className="inline-flex items-center py-2 px-4 font-[everettlight] border-[1px] border-black
-              transition-colors rounded-md hover:bg-black hover:text-white"
+              text-black transition-colors rounded-md hover:bg-black hover:text-white"
             >
               {point.cta.text}
             </a>

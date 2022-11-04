@@ -11,37 +11,11 @@ function Root({ children }: PropsWithChildren): JSX.Element {
           Are you looking for a skilled Web Developer to build/improve your websites or applications?
           My name is Azat, and I've been doing just that for individuals and businesses for 4+ years
         `} />
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
-          rel="stylesheet"
-        />
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
         />
         <meta charSet="utf-8" />
-        <link
-          rel="preconnect"
-          href="https://fonts.googleapis.com"
-        />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Open+Sans:wght@300;400;600&display=swap"
-          rel="stylesheet"
-        />
 
         <meta name="robots" content="index, follow" />
 
@@ -114,14 +88,6 @@ function Root({ children }: PropsWithChildren): JSX.Element {
             font-family: 'everettultralight';
             src: url('/fonts/everett-ultralight-webfont.woff2') format('woff2'),
                  url('/fonts/everett-ultralight-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-          }
-
-          @font-face {
-            font-family: 'everettmedium';
-            src: url('/fonts/everett-medium-webfont.woff2') format('woff2'),
-                 url('/fonts/everett-medium-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
           }
