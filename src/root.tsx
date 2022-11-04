@@ -92,6 +92,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
           content="/icons/browserconfig.xml"
         />
         <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="/app.css" />
         <style dangerouslySetInnerHTML={{ __html: `
           @font-face {
             font-family: 'everettthin';

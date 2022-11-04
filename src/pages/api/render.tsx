@@ -15,16 +15,20 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
   )
 
   if (!fs.existsSync('dist')) {
-    console.info('making dist...')
+    console.info('making dist...');
     execSync('mkdir dist');
   }
 
-  console.info('writing html')
+  console.info('writing html');
   fs.writeFileSync('dist/index.html', indexHTML);
 
-  console.info('copying public')
+  console.info('copying public');
   execSync('cp -R public/* dist/');
 
+  console.info('yarn tailwind');
+  execSync('yarn tailwind');
+
+  console.info('done!');
   res.status(200).end()
 }
 
