@@ -1,0 +1,107 @@
+[
+  {
+    "title": "A Developer is Born",
+    "desc": "I began my venture into the programming with Android Development, using Udemy and Youtube tutorials",
+    "date": "Late 2015",
+    "cta": {
+      "text": "View My Apps",
+      "link": "https://play.google.com/store/apps/dev?id=5613471573391791221"
+    },
+    "icons": [
+      "android",
+      "java",
+      "xml"
+    ]
+  }, {
+    "title": "First App Released",
+    "desc": "An interest in Cybersecurity led me to release my first app, Wifi Manager. It lets users easily see details about network connection and has accumulated several thousand downloads",
+    "date": "Mar 2016",
+    "cta": {
+      "text": "View on Google Play",
+      "link": "https://play.google.com/store/apps/details?id=azat.wifimanager"
+    },
+    "icons": [
+      "android",
+      "java",
+      "xml"
+    ]
+  }, {
+    "title": "10k+ Downloads",
+    "desc": "I released a soundboard featuring a popular political candidate, which amassed tens of thousands of downloads",
+    "date": "Late 2016",
+    "cta": {
+      "text": "View on Google Play",
+      "link": "https://play.google.com/store/apps/dev?id=5613471573391791221"
+    },
+    "icons": [
+      "android",
+      "java",
+      "xml"
+    ]
+  }, {
+    "title": "Dipping into Web",
+    "desc": "Not being able to share my apps with any iPhone friends was always dissapointing. So I started to explore the web, making a website for my local skate shop",
+    "date": "Mid 2017",
+    "cta": {
+      "text": "Asphalt Assault",
+      "link": "https://asphalt-assault.glitch.me/"
+    },
+    "icons": [
+      "html",
+      "css",
+      "js"
+    ]
+  }, {
+    "title": "Diving into Web",
+    "desc": "Networking with local developers lead me to land a position with M2 Labs, working on a project that analyzed Git repositories and provided data about contributions",
+    "date": "June 2018",
+    "cta": {
+      "text": "Letter of Reccomendation",
+      "link": "/pdf/reccomendation.pdf"
+    },
+    "icons": [
+      "html",
+      "css",
+      "js",
+      "python",
+      "git",
+      "linux"
+    ]
+  }, {
+    "title": "Freelancing",
+    "desc": "My team networks with business owners and helps them solve modern problems with the web solutions",
+    "date": "Late 2018",
+    "enddate": "Present",
+    "cta": {
+      "text": "View Recent Projects",
+      "link": "/portfolio"
+    },
+    "icons": [
+      "react",
+      "next",
+      "typescript",
+      "golang",
+      "node",
+      "mysql",
+      "mongodb",
+      "aws"
+    ]
+  }, {
+    "title": "Software Engineer @ Tesla",
+    "desc": "I currently work on internal solar web tools at Tesla to help sustain the world's transition to sustainable energy",
+    "date": "Early 2022",
+    "enddate": "Present",
+    "cta": {
+      "text": "Tesla Solar",
+      "link": "https://www.tesla.com/solarpanels"
+    },
+    "icons": [
+      "react",
+      "next",
+      "typescript",
+      "css",
+      "node",
+      "mysql"
+    ]
+  }
+]
