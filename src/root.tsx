@@ -4,7 +4,7 @@ import './index.css';
 
 function Root({ children }: PropsWithChildren): JSX.Element {
   return (
-    <html>
+    <html lang="en">
       <head>
         <title>Azat Valiev - Software Engineer</title>
         <meta name="description" content={`

@@ -20,7 +20,7 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
   }
 
   console.info('writing html');
-  fs.writeFileSync('dist/index.html', indexHTML);
+  fs.writeFileSync('dist/index.html', `<!DOCTYPE html>${indexHTML}`);
 
   console.info('copying public');
   execSync('cp -R public/* dist/');
