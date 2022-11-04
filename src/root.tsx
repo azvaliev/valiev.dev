@@ -67,6 +67,11 @@ function Root({ children }: PropsWithChildren): JSX.Element {
         />
         <meta name="theme-color" content="#000000" />
         <link rel="stylesheet" href="/app.css" />
+      </head>
+      <body>
+        <Navbar />
+        {children}
+        <script async defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" />
         <style dangerouslySetInnerHTML={{ __html: `
           @font-face {
             font-family: 'everettthin';
@@ -105,11 +110,6 @@ function Root({ children }: PropsWithChildren): JSX.Element {
             font-display: swap;
           }
         `}} />
-      </head>
-      <body>
-        <Navbar />
-        {children}
-        <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
       </body>
     </html>
   )
