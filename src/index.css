@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-display: swap;
-}
-
 html {
   scroll-behavior:smooth;
 }

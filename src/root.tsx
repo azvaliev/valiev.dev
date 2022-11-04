@@ -74,6 +74,8 @@ function Root({ children }: PropsWithChildren): JSX.Element {
                  url('/fonts/everett-thin-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
+
           }
 
           @font-face {
@@ -82,6 +84,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
                  url('/fonts/everett-light-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
           }
 
           @font-face {
@@ -90,6 +93,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
                  url('/fonts/everett-ultralight-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
           }
 
           @font-face {
@@ -98,6 +102,7 @@ function Root({ children }: PropsWithChildren): JSX.Element {
                  url('/fonts/everett-regular-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+            font-display: swap;
           }
         `}} />
       </head>
