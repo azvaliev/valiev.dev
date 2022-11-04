@@ -17,17 +17,17 @@ function Testimonials(): JSX.Element {
             mb-8 md:pb-0 md:mb-0 border-gray-300 w-full px-4 text-center md:border-none"
           >
             <blockquote className="font-light text-lg mb-4">
-              "{testimonial.quote}"
+              &quot;{testimonial.quote}&quot;
             </blockquote>
             <img
               src={`/img/testimonials/${testimonial.img}`}
               alt={testimonial.author}
-              className="w-[70%] mx-auto mb-4 mt-auto rounded-full"
+              className="w-[70%] mx-auto mb-4 mt-auto rounded-full aspect-square"
             />
             <h3 className="font-[everettregular] text-2xl underline">
               {testimonial.author}
             </h3>
-            <h4 className="italic text-xl font-extralight">
+            <h4 className="italic text-xl font-extralight mt-1">
               {testimonial.title}
             </h4>
           </div>
