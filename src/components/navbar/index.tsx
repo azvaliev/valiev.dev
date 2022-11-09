@@ -1,15 +1,9 @@
-const navitems = [{
-  link: '/portfolio',
-  text: 'Portfolio',
-}, {
-  link: '#about',
-  text: 'About',
-}, {
-  link: '#contact',
-  text: 'Contact',
-}];
+type NavbarProps = {
+  items: Array<{ link: string, text: string }>;
+}
 
-function Navbar(): JSX.Element {
+
+function Navbar({ items: navitems }: NavbarProps): JSX.Element {
   return (
     <nav className="flex w-full h-[10vh] bg-[hsla(0,0%,100%,.88)] items-center justify-around sm:justify-end sm:gap-4 md:gap-8 px-4 z-20 sticky top-0">
       {navitems.map((item) => (

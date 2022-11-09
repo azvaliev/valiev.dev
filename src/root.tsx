@@ -73,7 +73,6 @@ function Root({ children }: PropsWithChildren): JSX.Element {
         <link rel="stylesheet" href="/app.css" />
       </head>
       <body>
-        <Navbar />
         {children}
         <script async defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" />
         <style dangerouslySetInnerHTML={{ __html: `

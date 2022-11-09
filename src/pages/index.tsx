@@ -1,10 +1,25 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+/* eslint-disable @next/next/no-img-element */
+import Navbar from "../components/navbar";
 import Section from "../components/section";
 import Testimonials from "../components/testimonials";
 import Timeline from "../components/timeline";
 
+const navitems = [{
+  link: '/portfolio',
+  text: 'Portfolio',
+}, {
+  link: '#about',
+  text: 'About',
+}, {
+  link: '#contact',
+  text: 'Contact',
+}];
+
 function Home (): JSX.Element {
   return (
     <>
+      <Navbar items={navitems} />
       <main className="flex h-[90vh] w-full ">
         <div className="h-[100vh] w-full absolute top-0 left-0 z-0" aria-hidden="true">
           <img
@@ -20,7 +35,7 @@ function Home (): JSX.Element {
             </h1>
             <h2 className="text-2xl text-center font-[everettregular] mt-4 mb-3">
               <div className="px-6">
-              I'm an Austin based Software Engineer with experience in&nbsp;
+              I&apos;m an Austin based Software Engineer with experience in&nbsp;
               </div>
               <div
                 className="overflow-hidden relative h-10 mx-auto text-center text-lg sm:text-xl md:text-2xl"
@@ -49,7 +64,7 @@ function Home (): JSX.Element {
           About Me
         </h2>
         <p className="mt-10">
-          I'm a self-taught web developer, beginning my education at 12,
+          I&apos;m a self-taught web developer, beginning my education at 12,
           with 4 years of professional experience as freelance & at several companies.
           While I do specialize in front-end currently, I am well capable on the full stack
         </p>
@@ -66,10 +81,10 @@ function Home (): JSX.Element {
         dark
       >
         <h2 className="text-5xl font-[everettultralight]">
-          Let's Talk
+          Let&apos;s Talk
         </h2>
         <p className="mt-10">
-          I'm not open to full time positions at this time,
+          I&apos;m not open to full time positions at this time,
           but currently looking to bring people onto my freelance team!
         </p>
         <br />

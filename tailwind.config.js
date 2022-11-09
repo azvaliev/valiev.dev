@@ -6,7 +6,14 @@ module.exports = {
     "./dist/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'everett-thin': 'everettthin',
+        'everett-light': 'everettlight',
+        'everett-ultralight': 'everettultralight',
+        'everett-regular': 'everettregular'
+      }
+    },
     colors: {
       // Background image overlay on homepage
       'home-overlay': 'hsla(0,0%,100%,.88)',
@@ -18,6 +25,7 @@ module.exports = {
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
+      blue: colors.blue,
     },
   },
   plugins: [],

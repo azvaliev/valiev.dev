@@ -3,6 +3,7 @@ import { execSync } from 'child_process';
 
 import Root from '../../root';
 import Home from '..';
+import Portfolio from '../portfolio'
 
 import ReactDOMServer from 'react-dom/server';
 import type { NextApiRequest, NextApiResponse } from 'next';
@@ -14,10 +15,9 @@ async function handler(_req: NextApiRequest, res: NextApiResponse) {
     </Root>
   )
 
-  const portfolio = fs.readFileSync('src/pages/api/portfolio.html').toString();
   const portfolioHTML = ReactDOMServer.renderToStaticMarkup(
     <Root>
-      <div id="__next" dangerouslySetInnerHTML={{ __html: portfolio }} />
+      <Portfolio />
     </Root>
   )
 
