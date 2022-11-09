@@ -6,7 +6,7 @@ import Home from '..';
 import Portfolio from '../portfolio'
 
 import ReactDOMServer from 'react-dom/server';
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 async function handler(_req: NextApiRequest, res: NextApiResponse) {
   const indexHTML = ReactDOMServer.renderToStaticMarkup(
