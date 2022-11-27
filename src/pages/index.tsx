@@ -85,19 +85,20 @@ function Home (): JSX.Element {
         </h2>
         <p className="mt-10">
           I&apos;m not open to full time positions at this time,
-          but currently looking to bring people onto my freelance team!
+          but currently looking to bring people onto my
+          &nbsp;<a href="https://valievventures.com" className="font-medium underline">freelance team!</a>
         </p>
         <br />
         <p>
-          <a href="mailto:valiev.dev@gmail.com" className="font-bold underline">
-            Email me
+          <a href="https://www.valievventures.com/contact" className="font-medium underline">
+            Meet with me through Calendly
           </a>
-          &nbsp;at <b>valiev.dev@gmail.com</b>.
+          &nbsp;or email me at <b>azat@valievventures.com</b>.
           <br />
           Alternatively, I am also available on&nbsp;
           <a
             href="https://www.linkedin.com/in/azatvaliev/"
-            className="font-bold underline"
+            className="font-medium underline"
             rel="noopener"
           >
             LinkedIn
