@@ -89,8 +89,8 @@
   }, {
     "title": "Software Engineer @ Tesla",
     "desc": "I currently work on internal solar web tools at Tesla to help sustain the world's transition to sustainable energy",
-    "date": "Early 2022",
-    "enddate": "Present",
+    "date": "2022",
+    "enddate": "2023",
     "cta": {
       "text": "Tesla Solar",
       "link": "https://www.tesla.com/solarpanels"
@@ -101,8 +101,24 @@
       "js",
       "typescript",
       "css",
+      "node"
+    ]
+  }, {
+    "title": "Senior Software Engineer Tech Lead @ Homee",
+    "desc": "I lead a backend team at Homee, working to simplify the home insurance claims process",
+    "date": "2023",
+    "enddate": "Present",
+    "cta": {
+      "text": "Homee",
+      "link": "https://www.homee.com"
+    },
+    "icons": [
+      "typescript",
       "node",
-      "mysql"
+      "Fastify",
+      "aws",
+      "mysql",
+      "postgres"
     ]
   }
 ]
