@@ -6,9 +6,6 @@ import Testimonials from "../components/testimonials";
 import Timeline from "../components/timeline";
 
 const navitems = [{
-  link: '/portfolio',
-  text: 'Portfolio',
-}, {
   link: '#about',
   text: 'About',
 }, {
@@ -41,10 +38,10 @@ function Home (): JSX.Element {
                 className="overflow-hidden relative h-10 mx-auto text-center text-lg sm:text-xl md:text-2xl"
               >
                 <ul className="w-fit tech-list text-center mx-auto p-0">
-                  <li>HTML, CSS, JS, TypeScript and Go</li>
-                  <li>Modern Web Frameworks like Next.js</li>
-                  <li>Backend Technologies like Express</li>
-                  <li aria-hidden="true">HTML, CSS, JS, TypeScript and Go</li>
+                  <li>Modern NodeJS w/ TypeScript</li>
+                  <li>Backend frameworks like Fastify & Express</li>
+                  <li>Working with databases like MySQL & Postgres</li>
+                  <li aria-hidden="true">Modern NodeJS w/ TypeScript</li>
                 </ul>
               </div>
             </h2>

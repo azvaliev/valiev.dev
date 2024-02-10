@@ -48,9 +48,6 @@ function Timeline(): JSX.Element {
           </li>
         ))}
       </ol>
-      <a href="/portfolio" className="btn mt-8">
-        View Recent Projects
-      </a>
     </section>
   )
 }
