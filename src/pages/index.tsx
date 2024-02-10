@@ -62,8 +62,8 @@ function Home (): JSX.Element {
         </h2>
         <p className="mt-10">
           I&apos;m a self-taught web developer, beginning my education at 12,
-          with 4 years of professional experience as freelance & at several companies.
-          While I do specialize in front-end currently, I am well capable on the full stack
+          with over 4 years of professional experience as freelance & at several companies.
+          While I do specialize in backend currently, I am well capable on the full stack
         </p>
         <br />
         <p>
@@ -81,16 +81,12 @@ function Home (): JSX.Element {
           Let&apos;s Talk
         </h2>
         <p className="mt-10">
-          I&apos;m not open to full time positions at this time,
-          but currently looking to bring people onto my
-          &nbsp;<a href="https://valievventures.com" className="font-medium underline">freelance team!</a>
+          While I do currently hold a full time position,
+          I&apos;m always open to opportunities
         </p>
         <br />
         <p>
-          <a href="https://www.valievventures.com/contact" className="font-medium underline">
-            Meet with me through Calendly
-          </a>
-          &nbsp;or email me at <b>azat@valievventures.com</b>.
+          Shoot me an email at <b>valiev.dev@gmail.com</b>.
           <br />
           Alternatively, I am also available on&nbsp;
           <a

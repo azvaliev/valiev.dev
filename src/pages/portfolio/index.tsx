@@ -15,7 +15,9 @@ const navitems = [{
   text: 'Contact',
 }];
 
-function Portfolio(): JSX.Element {
+function Portfolio(): JSX.Element | null {
+  return null;
+
   return (
     <>
       <Navbar items={navitems} />
