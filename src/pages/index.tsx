@@ -38,16 +38,13 @@ function Home (): JSX.Element {
                 className="overflow-hidden relative h-10 mx-auto text-center text-lg sm:text-xl md:text-2xl"
               >
                 <ul className="w-fit tech-list text-center mx-auto p-0">
-                  <li>Modern NodeJS w/ TypeScript</li>
-                  <li>Backend frameworks like Fastify & Express</li>
+                  <li>Full stack web apps using TypeScript</li>
+                  <li>Microservice & monolith based architectures</li>
                   <li>Working with databases like MySQL & Postgres</li>
-                  <li aria-hidden="true">Modern NodeJS w/ TypeScript</li>
+                  <li aria-hidden="true">Full stack web apps using TypeScript</li>
                 </ul>
               </div>
             </h2>
-            <a className="btn" href="/portfolio">
-              View My Work
-            </a>
           </div>
         </div>
       </main>
@@ -61,13 +58,13 @@ function Home (): JSX.Element {
           About Me
         </h2>
         <p className="mt-10">
-          I&apos;m a self-taught web developer, beginning my education at 12,
+          I&apos;m a self-taught software engineer, beginning my education at 12,
           with over 4 years of professional experience as freelance & at several companies.
           While I do specialize in backend currently, I am well capable on the full stack
         </p>
         <br />
         <p>
-          Having started multiple businesses myself,
+          Having started multiple businesses myself, worked in both startups and large companies,
           I am able to bring a unique and valuable perspective along with my skills to the table.
         </p>
       </Section>

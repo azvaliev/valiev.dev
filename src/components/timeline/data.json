@@ -12,7 +12,8 @@
       "java",
       "xml"
     ]
-  }, {
+  },
+  {
     "title": "First App Released",
     "desc": "An interest in Cybersecurity led me to release my first app, Wifi Manager. It lets users easily see details about network connection and has accumulated several thousand downloads",
     "date": "Mar 2016",
@@ -25,7 +26,8 @@
       "java",
       "xml"
     ]
-  }, {
+  },
+  {
     "title": "10k+ Downloads",
     "desc": "I released a soundboard featuring a popular political candidate, which amassed tens of thousands of downloads",
     "date": "Late 2016",
@@ -38,7 +40,8 @@
       "java",
       "xml"
     ]
-  }, {
+  },
+  {
     "title": "Dipping into Web",
     "desc": "Not being able to share my apps with any iPhone friends was always dissapointing. So I started to explore the web, making a website for my local skate shop",
     "date": "Mid 2017",
@@ -51,13 +54,14 @@
       "css",
       "js"
     ]
-  }, {
+  },
+  {
     "title": "Diving into Web @ M2 Labs",
     "desc": "Networking with local developers lead me to land a position with M2 Labs, working on a project that analyzed Git repositories and provided data about contributions",
     "date": "June 2018",
     "cta": {
-      "text": "Letter of Reccomendation",
-      "link": "/pdf/reccomendation.pdf"
+      "text": "Letter of Recommendation",
+      "link": "/pdf/reccomendation_letter.pdf"
     },
     "icons": [
       "html",
@@ -67,14 +71,15 @@
       "git",
       "linux"
     ]
-  }, {
+  },
+  {
     "title": "Freelancing",
     "desc": "My team networks with business owners and helps them solve modern problems with the web solutions",
     "date": "Late 2018",
     "enddate": "Present",
     "cta": {
-      "text": "View Recent Projects",
-      "link": "/portfolio"
+      "text": "View Testimonials",
+      "link": "/#testimonials"
     },
     "icons": [
       "react",
@@ -86,7 +91,8 @@
       "mysql",
       "aws"
     ]
-  }, {
+  },
+  {
     "title": "Software Engineer @ Tesla",
     "desc": "I currently work on internal solar web tools at Tesla to help sustain the world's transition to sustainable energy",
     "date": "2022",
@@ -103,9 +109,10 @@
       "css",
       "node"
     ]
-  }, {
+  },
+  {
     "title": "Senior Software Engineer Tech Lead @ Homee",
-    "desc": "I lead a backend team at Homee, working to simplify the home insurance claims process",
+    "desc": "I lead a backend team at Homee, working to bring automation to the home insurance claims process",
     "date": "2023",
     "enddate": "Present",
     "cta": {
