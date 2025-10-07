@@ -10,6 +10,10 @@ b {
   font-weight: 600;
 }
 
+.scroll-offset {
+  @apply scroll-mt-16 md:scroll-mt-20;
+}
+
 a:hover {
   cursor: pointer;
 }

@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
+import type { DetailedHTMLProps, HTMLAttributes } from 'react';
 import timelinedata from './data.json';
 
-function Timeline(): JSX.Element {
+function Timeline(props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>): JSX.Element {
   return (
-    <section className="flex flex-col w-full min-h-screen py-8">
+    <section className="flex flex-col w-full min-h-screen py-8 scroll-offset" {...props}>
       <h2 className="font-[everettthin] text-5xl uppercase text-center mb-8">
         Experience
       </h2>

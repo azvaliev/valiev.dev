@@ -5,7 +5,11 @@ import Section from "../components/section";
 import Testimonials from "../components/testimonials";
 import Timeline from "../components/timeline";
 
-const navitems = [{
+const navitems = [
+{
+  link: '#experience',
+  text: 'Experience'
+},{
   link: '#about',
   text: 'About',
 }, {
@@ -56,11 +60,11 @@ function Home (): JSX.Element {
           </div>
         </div>
       </main>
-      <Timeline />
+      <Timeline id="experience" />
       <Testimonials />
       <Section
         id="about"
-        className="flex flex-col justify-center text-center w-[90%] md:w-[70%] lg:w-1/2 mx-auto text-xl font-light scroll-mt-16 md:scroll-mt-20"
+        className="flex flex-col justify-center text-center w-[90%] md:w-[70%] lg:w-1/2 mx-auto text-xl font-light scroll-offset"
       >
         <h2 className="text-5xl font-[everettultralight]">
           About Me
