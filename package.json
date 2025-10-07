@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next dev & yarn dlx wait-on -d 20000 http-get://localhost:3000/api/render && yarn dlx kill-port 3000",
+    "deploy": "yarn build && ./deploy.sh",
     "dev": "next dev",
     "lint": "next lint",
     "tailwind": "npx tailwindcss build -i src/index.css -o ./dist/app.css --minify"
