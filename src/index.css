@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 b {
@@ -15,7 +15,7 @@ a:hover {
 }
 
 .btn {
-  @apply text-2xl pt-2 pb-1 px-4 mx-auto font-[everettlight] border-[1px] border-black rounded-md transition-colors;
+  @apply rounded-md border-[1px] border-black px-4 pt-2 pb-1 font-[everettlight] text-2xl transition-colors;
   transition-duration: 300ms;
 }
 
@@ -29,40 +29,40 @@ ul.tech-list {
 }
 
 ul.tech-list > li {
-  @apply opacity-100 h-7 p-0 m-2.5 list-none border-b-[1px] border-black;
+  @apply m-2.5 h-7 list-none border-b-[1px] border-black p-0 opacity-100;
 }
 
 @keyframes scrollUp {
   0% {
     -webkit-transform: translateY(10%);
-            transform: translateY(10%);
+    transform: translateY(10%);
   }
   5% {
     -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    transform: translateY(-5%);
   }
   26% {
     -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    transform: translateY(-5%);
   }
   36% {
     -webkit-transform: translateY(-32.5%);
-            transform: translateY(-32.5%);
+    transform: translateY(-32.5%);
   }
   62% {
     -webkit-transform: translateY(-32.5%);
-            transform: translateY(-32.5%);
+    transform: translateY(-32.5%);
   }
   72% {
     -webkit-transform: translateY(-60%);
-            transform: translateY(-60%);
+    transform: translateY(-60%);
   }
   95% {
     -webkit-transform: translateY(-60%);
-            transform: translateY(-60%);
+    transform: translateY(-60%);
   }
   100% {
     -webkit-transform: translateY(-70%);
-            transform: translateY(-70%);
+    transform: translateY(-70%);
   }
 }

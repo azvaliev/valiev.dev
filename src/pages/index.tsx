@@ -32,19 +32,27 @@ function Home (): JSX.Element {
             </h1>
             <h2 className="text-2xl text-center font-[everettregular] mt-4 mb-3">
               <div className="px-6">
-              I&apos;m an Austin based Software Engineer with experience in&nbsp;
+              I&apos;m a San Francisco based Software Engineer with experience in&nbsp;
               </div>
               <div
                 className="overflow-hidden relative h-10 mx-auto text-center text-lg sm:text-xl md:text-2xl"
               >
-                <ul className="w-fit tech-list text-center mx-auto p-0">
-                  <li>Full stack web apps using TypeScript</li>
-                  <li>Microservice & monolith based architectures</li>
-                  <li>Working with databases like MySQL & Postgres</li>
-                  <li aria-hidden="true">Full stack web apps using TypeScript</li>
+                <ul className="w-fit tech-list text-center mx-auto py-0">
+                  <li>Leveraging AI Agents to drive powerful workflows</li>
+                  <li>Translating business needs into technical solutions</li>
+                  <li>Working individually, leading or simply a member of an Agile team</li>
+                  <li aria-hidden>Leveraging AI Agents to drive powerful workflows</li>
                 </ul>
               </div>
             </h2>
+            <div className="flex flex-row gap-x-4 justify-center">
+              <a className="btn" href="/resume.docx" target="_blank">
+                My Resume
+              </a>
+              <a className="btn" href="#contact">
+                Contact Me
+              </a>
+            </div>
           </div>
         </div>
       </main>
@@ -83,7 +91,7 @@ function Home (): JSX.Element {
         </p>
         <br />
         <p>
-          Shoot me an email at <b>valiev.dev@gmail.com</b>.
+          <a href="mailto:valiev.dev@gmail.com" className="underline">Shoot me an email</a> at <b>valiev.dev@gmail.com</b>.
           <br />
           Alternatively, I am also available on&nbsp;
           <a
