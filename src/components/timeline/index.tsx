@@ -34,6 +34,9 @@ function Timeline(props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLD
             </p>
             <a
               href={point.cta.link}
+              {...(point.cta.link.startsWith('#') || point.cta.link.startsWith('/#')
+                ? {}
+                : { target: '_blank', rel: 'noopener noreferrer' })}
               className={`inline-flex items-center py-2 px-4 font-[everettlight] border-[1px] border-black
               transition-colors rounded-md ${
                 isCurrent
