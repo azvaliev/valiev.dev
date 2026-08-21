@@ -21,7 +21,7 @@ function Home (): JSX.Element {
   return (
     <>
       <Navbar items={navitems} />
-      <main className="flex h-[90vh] w-full ">
+      <main className="flex h-[90vh] w-full overflow-x-hidden">
         <div className="h-[100vh] w-full absolute top-0 left-0 z-0" aria-hidden="true">
           <img
             src="/img/austin.webp"
@@ -30,18 +30,18 @@ function Home (): JSX.Element {
           />
         </div>
         <div className="flex z-10 bg-[hsla(0,0%,100%,.88)] h-full w-full justify-center items-center">
-          <div className="flex flex-col -mt-[15%] md:-mt-[5%]">
+          <div className="flex flex-col -mt-[15%] md:-mt-[5%] w-full max-w-full px-4">
             <h1 className="text-3xl text-center font-[everettultralight]">
               Hi, my name is Azat
             </h1>
-            <h2 className="text-2xl text-center font-[everettregular] mt-4 mb-3">
-              <div className="px-6">
-              I&apos;m a San Francisco based Software Engineer with experience in&nbsp;
+            <h2 className="text-xl sm:text-2xl text-center font-[everettregular] mt-4 mb-3">
+              <div className="px-2 sm:px-6">
+              I'm a San Francisco based Software Engineer with experience in&nbsp;
               </div>
               <div
-                className="overflow-hidden relative h-10 mx-auto text-center text-lg sm:text-xl md:text-2xl"
+                className="tech-list-window overflow-hidden relative mx-auto w-full max-w-xl text-center text-base sm:text-xl md:text-2xl"
               >
-                <ul className="w-fit tech-list text-center mx-auto py-0">
+                <ul className="w-full tech-list text-center mx-auto py-0">
                   <li>Leveraging AI Agents to drive powerful workflows</li>
                   <li>Translating business needs into technical solutions</li>
                   <li>Working individually, leading or simply a member of an Agile team</li>
@@ -49,7 +49,7 @@ function Home (): JSX.Element {
                 </ul>
               </div>
             </h2>
-            <div className="flex flex-row gap-x-4 justify-center">
+            <div className="flex flex-row flex-wrap gap-3 justify-center">
               <a className="btn" href="/resume.docx" target="_blank">
                 My Resume
               </a>
@@ -66,11 +66,11 @@ function Home (): JSX.Element {
         id="about"
         className="flex flex-col justify-center text-center w-[90%] md:w-[70%] lg:w-1/2 mx-auto text-xl font-light scroll-offset"
       >
-        <h2 className="text-5xl font-[everettultralight]">
+        <h2 className="text-4xl md:text-5xl font-[everettultralight]">
           About Me
         </h2>
         <p className="mt-10">
-          I&apos;m a self-taught software engineer, beginning my education at 12,
+          I'm a self-taught software engineer, beginning my education at 12,
           with over 4 years of professional experience as freelance & at several companies.
           While I do specialize in backend currently, I am well capable on the full stack
         </p>
@@ -86,12 +86,12 @@ function Home (): JSX.Element {
 
         dark
       >
-        <h2 className="text-5xl font-[everettultralight]">
-          Let&apos;s Talk
+        <h2 className="text-4xl md:text-5xl font-[everettultralight]">
+          Let's Talk
         </h2>
         <p className="mt-10">
           While I do currently hold a full time position,
-          I&apos;m always open to opportunities
+          I'm always open to opportunities
         </p>
         <br />
         <p>
