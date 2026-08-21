@@ -7,6 +7,9 @@ import Timeline from "../components/timeline";
 
 const navitems = [
 {
+  link: '#featured',
+  text: 'Featured'
+},{
   link: '#experience',
   text: 'Experience'
 },{
@@ -36,16 +39,16 @@ function Home (): JSX.Element {
             </h1>
             <h2 className="text-xl sm:text-2xl text-center font-[everettregular] mt-4 mb-3">
               <div className="px-2 sm:px-6">
-              I'm a San Francisco based Software Engineer with experience in&nbsp;
+              I'm an AI Engineer with experience in&nbsp;
               </div>
               <div
                 className="tech-list-window overflow-hidden relative mx-auto w-full max-w-xl text-center text-base sm:text-xl md:text-2xl"
               >
                 <ul className="w-full tech-list text-center mx-auto py-0">
-                  <li>Leveraging AI Agents to drive powerful workflows</li>
-                  <li>Translating business needs into technical solutions</li>
-                  <li>Working individually, leading or simply a member of an Agile team</li>
-                  <li aria-hidden>Leveraging AI Agents to drive powerful workflows</li>
+                  <li>Leading AI product teams from idea to public launch</li>
+                  <li>Building AI agents that do real work for real users</li>
+                  <li>Scaling agents with evals, observability, and guardrails</li>
+                  <li aria-hidden>Leading AI product teams from idea to public launch</li>
                 </ul>
               </div>
             </h2>
@@ -60,6 +63,42 @@ function Home (): JSX.Element {
           </div>
         </div>
       </main>
+      <Section
+        id="featured"
+        className="flex flex-col justify-center text-center w-[90%] md:w-[70%] lg:w-1/2 mx-auto text-xl font-light scroll-offset"
+      >
+        <p className="uppercase tracking-widest text-sm text-gray-500 mb-3">
+          Featured Work
+        </p>
+        <h2 className="text-4xl md:text-5xl font-[everettultralight]">
+          Paywalls AI Editor
+        </h2>
+        <p className="mt-10">
+          I lead the Paywalls AI team at RevenueCat, where we built the Paywalls AI Editor — a conversational AI agent that generates and edits production-ready paywalls from natural language, streaming changes into a live preview.
+        </p>
+        <br />
+        <p>
+          Launched in public beta May 2026 on the paywall platform behind <b>113,000+ apps</b> — taken from an empty repo to launch in about three months.
+        </p>
+        <div className="flex flex-row flex-wrap gap-4 justify-center mt-10">
+          <a
+            className="btn"
+            href="https://www.revenuecat.com/blog/company/paywalls-ai-editor/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read the Launch
+          </a>
+          <a
+            className="btn"
+            href="https://www.revenuecat.com/feature/paywalls"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore Paywalls
+          </a>
+        </div>
+      </Section>
       <Timeline id="experience" />
       <Testimonials />
       <Section
@@ -70,14 +109,11 @@ function Home (): JSX.Element {
           About Me
         </h2>
         <p className="mt-10">
-          I'm a self-taught software engineer, beginning my education at 12,
-          with over 4 years of professional experience as freelance & at several companies.
-          While I do specialize in backend currently, I am well capable on the full stack
+          I'm a self-taught engineer — programming since age 12, shipping Android apps with 15k+ downloads before high school, and building professionally ever since. Today I'm the tech lead of the Paywalls AI team at RevenueCat, putting AI agents to work in production.
         </p>
         <br />
         <p>
-          Having started multiple businesses myself, worked in both startups and large companies,
-          I am able to bring a unique and valuable perspective along with my skills to the table.
+          My focus is agentic AI end to end — orchestration, tool design, evals, and the product surfaces around them — backed by full stack depth from Tesla, Homee, and years of building my own ventures.
         </p>
       </Section>
       <Section
@@ -91,7 +127,7 @@ function Home (): JSX.Element {
         </h2>
         <p className="mt-10">
           While I do currently hold a full time position,
-          I'm always open to opportunities
+          I'm always open to opportunities — especially in agentic AI and applied ML
         </p>
         <br />
         <p>
