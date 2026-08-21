@@ -133,7 +133,7 @@ function Home (): JSX.Element {
           <a href="mailto:valiev.dev@gmail.com" className="underline">Shoot me an email</a> at <b>valiev.dev@gmail.com</b>.
           <br />
           Alternatively, I am also available on&nbsp;
-          <a href="https://www.linkedin.com/in/azatvaliev/" className="font-medium underline" rel="noopener">
+          <a href="https://www.linkedin.com/in/azatvaliev/" className="font-medium underline" rel="noopener noreferrer" target="_blank">
             LinkedIn
           </a>
         </p>
