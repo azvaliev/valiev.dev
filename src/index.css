@@ -5,6 +5,14 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
+  /* Match the fixed nav so hash links don't leave a hero sliver under it */
+  scroll-padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
 }
 
 body {
@@ -17,7 +25,13 @@ b {
 }
 
 .scroll-offset {
-  @apply scroll-mt-16 md:scroll-mt-20;
+  scroll-margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .scroll-offset {
+    scroll-margin-top: 4rem;
+  }
 }
 
 a:hover {
