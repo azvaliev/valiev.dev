@@ -42,13 +42,13 @@ function Home (): JSX.Element {
               I'm an AI Engineer with experience in&nbsp;
               </div>
               <div
-                className="tech-list-window overflow-hidden relative mx-auto w-full max-w-xl text-center text-base sm:text-xl md:text-2xl"
+                className="tech-list-window overflow-hidden relative mx-auto w-full max-w-xl text-center text-lg sm:text-xl md:text-2xl"
               >
                 <ul className="w-full tech-list text-center mx-auto py-0">
-                  <li>Leading AI product teams from idea to public launch</li>
-                  <li>Building AI agents that do real work for real users</li>
-                  <li>Scaling agents with evals, observability, and guardrails</li>
-                  <li aria-hidden>Leading AI product teams from idea to public launch</li>
+                  <li>Leading AI products from idea to launch</li>
+                  <li>Building agents that do real work</li>
+                  <li>Scaling agents with evals & guardrails</li>
+                  <li aria-hidden>Leading AI products from idea to launch</li>
                 </ul>
               </div>
             </h2>

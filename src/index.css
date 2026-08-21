@@ -34,7 +34,7 @@ a:hover {
 }
 
 .tech-list-window {
-  height: 3.5rem;
+  height: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -49,15 +49,11 @@ ul.tech-list {
 }
 
 ul.tech-list > li {
-  @apply flex h-14 md:h-10 list-none items-center justify-center border-b-[1px] border-black px-3 py-0 text-center opacity-100;
+  @apply flex h-8 md:h-10 list-none items-center justify-center border-b-[1px] border-black px-2 py-0 text-center opacity-100;
   margin: 0;
-  line-height: 1.25;
-}
-
-@media (min-width: 768px) {
-  ul.tech-list > li {
-    white-space: nowrap;
-  }
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @keyframes scrollUp {
