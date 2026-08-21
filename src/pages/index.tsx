@@ -24,8 +24,8 @@ function Home (): JSX.Element {
   return (
     <>
       <Navbar items={navitems} />
-      <main className="flex h-[90vh] w-full overflow-x-hidden">
-        <div className="h-[100vh] w-full absolute top-0 left-0 z-0" aria-hidden="true">
+      <main className="relative flex h-[calc(100svh-3rem)] md:h-[calc(100svh-4rem)] w-full overflow-hidden">
+        <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
             src="/img/austin.webp"
             alt="Austin City Skyline"
@@ -37,12 +37,12 @@ function Home (): JSX.Element {
             <h1 className="text-3xl text-center font-[everettultralight]">
               Hi, my name is Azat
             </h1>
-            <h2 className="text-xl sm:text-2xl text-center font-[everettregular] mt-4 mb-3">
+            <h2 className="text-lg sm:text-xl md:text-2xl text-center font-[everettregular] mt-4 mb-3">
               <div className="px-2 sm:px-6">
               I'm an AI Engineer with experience in&nbsp;
               </div>
               <div
-                className="tech-list-window overflow-hidden relative mx-auto w-full max-w-xl text-center text-lg sm:text-xl md:text-2xl"
+                className="tech-list-window overflow-hidden relative mx-auto w-full max-w-xl text-center"
               >
                 <ul className="w-full tech-list text-center mx-auto py-0">
                   <li>Leading AI products from idea to launch</li>
@@ -119,32 +119,26 @@ function Home (): JSX.Element {
       <Section
         id="contact"
         className="flex flex-col justify-center text-center w-full px-[5%] md:px-[15%] lg:px-[25%] mx-auto text-xl font-light"
-
         dark
       >
         <h2 className="text-4xl md:text-5xl font-[everettultralight]">
           Let's Talk
         </h2>
         <p className="mt-10">
-          While I do currently hold a full time position,
-          I'm always open to opportunities — especially in agentic AI and applied ML
+          While I do currently hold a full time position, I'm always open to opportunities — especially in agentic AI and applied ML
         </p>
         <br />
         <p>
           <a href="mailto:valiev.dev@gmail.com" className="underline">Shoot me an email</a> at <b>valiev.dev@gmail.com</b>.
           <br />
           Alternatively, I am also available on&nbsp;
-          <a
-            href="https://www.linkedin.com/in/azatvaliev/"
-            className="font-medium underline"
-            rel="noopener"
-          >
+          <a href="https://www.linkedin.com/in/azatvaliev/" className="font-medium underline" rel="noopener">
             LinkedIn
           </a>
         </p>
       </Section>
     </>
-  );
+  )
 }
 
 export default Home;
