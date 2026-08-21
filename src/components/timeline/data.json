@@ -74,9 +74,9 @@
   },
   {
     "title": "Freelancing",
-    "desc": "My team networks with business owners and helps them solve modern problems with the web solutions",
+    "desc": "My team networked with business owners and helped them solve modern problems with web solutions",
     "date": "Late 2018",
-    "enddate": "Present",
+    "enddate": "2021",
     "cta": {
       "text": "View Testimonials",
       "link": "/#testimonials"
@@ -94,7 +94,7 @@
   },
   {
     "title": "Software Engineer @ Tesla",
-    "desc": "I currently work on internal solar web tools at Tesla to help sustain the world's transition to sustainable energy",
+    "desc": "I worked on internal solar web tools at Tesla to help sustain the world's transition to sustainable energy",
     "date": "2022",
     "enddate": "2023",
     "cta": {
@@ -112,9 +112,9 @@
   },
   {
     "title": "Senior Software Engineer Tech Lead @ Homee",
-    "desc": "I lead a backend team at Homee, working to bring automation to the home insurance claims process",
+    "desc": "I led the Platform team at Homee, building the AI claims intake and automations behind their Smart-Claim insurance platform — matching 9 of 10 claims to a repair pro in under 3 minutes",
     "date": "2023",
-    "enddate": "Present",
+    "enddate": "2026",
     "cta": {
       "text": "Homee",
       "link": "https://www.homee.com"
@@ -125,6 +125,22 @@
       "Fastify",
       "aws",
       "mysql",
+      "postgres"
+    ]
+  },
+  {
+    "title": "Paywalls AI Tech Lead @ RevenueCat",
+    "desc": "I lead the Paywalls AI team — we took the Paywalls AI Editor from an empty repo to public launch: a conversational agent that builds production-ready paywalls for the platform behind 113,000+ apps",
+    "date": "2026",
+    "enddate": "Present",
+    "cta": {
+      "text": "Paywalls AI Editor",
+      "link": "https://www.revenuecat.com/blog/company/paywalls-ai-editor/"
+    },
+    "icons": [
+      "typescript",
+      "react",
+      "python",
       "postgres"
     ]
   }

@@ -6,10 +6,10 @@ function Root({ children }: PropsWithChildren): JSX.Element {
   return (
     <html lang="en">
       <head>
-        <title>Azat Valiev - Software Engineer</title>
+        <title>Azat Valiev - AI Engineer</title>
         <meta name="description" content={`
-          Are you looking for a skilled Software Engineer to build/improve your websites or applications?
-          My name is Azat, and I've been doing just that for individuals and businesses for 4+ years
+          Azat Valiev — AI Engineer and tech lead building agentic AI products.
+          Currently leading the Paywalls AI team at RevenueCat.
         `} />
         <meta
           name="viewport"
@@ -21,11 +21,11 @@ function Root({ children }: PropsWithChildren): JSX.Element {
 
         <meta
           property="og:title"
-          content="Azat Valiev - Software Engineer"
+          content="Azat Valiev - AI Engineer"
         />
         <meta
           property="og:description"
-          content="Full Stack Web Developer with 4+ years of experience"
+          content="AI Engineer and tech lead building agentic AI products in production"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/img/valievdev.png" />

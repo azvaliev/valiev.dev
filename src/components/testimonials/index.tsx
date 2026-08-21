@@ -6,7 +6,7 @@ function Testimonials(): JSX.Element {
     <>
       <div id="testimonials" aria-hidden style={{ position: 'relative', top: `-${NAVBAR_FIXED_HEIGHT}` }}/>
       <section className="flex flex-col w-full py-12 bg-gray-100" >
-        <h2 className="font-[everettthin] text-5xl text-center mb-8">
+        <h2 className="font-[everettthin] text-4xl md:text-5xl text-center mb-8">
           Testimonials
         </h2>
         <div
@@ -20,12 +20,12 @@ function Testimonials(): JSX.Element {
               mb-8 md:pb-0 md:mb-0 border-gray-300 w-full px-4 text-center md:border-none"
             >
               <blockquote className="font-light text-lg mb-4">
-                &quot;{testimonial.quote}&quot;
+                "{testimonial.quote}"
               </blockquote>
               <img
                 src={`/img/testimonials/${testimonial.img}`}
                 alt={testimonial.author}
-                className="w-[70%] mx-auto mb-4 mt-auto rounded-full aspect-square"
+                className="w-28 sm:w-32 md:w-40 mx-auto mb-4 mt-auto rounded-full aspect-square object-cover"
               />
               <h3 className="font-[everettregular] text-2xl underline">
                 {testimonial.author}

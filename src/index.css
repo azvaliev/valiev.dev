@@ -4,6 +4,28 @@
 
 html {
   scroll-behavior: smooth;
+  /* Only mechanism for hash offsets — do not also set scroll-margin
+     on sections or they add together and leave a hero sliver. */
+  scroll-padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 4rem;
+  }
+}
+
+body {
+  overflow-x: clip;
+  max-width: 100%;
+  background-color: #fff;
+  scroll-padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    scroll-padding-top: 4rem;
+  }
 }
 
 b {
@@ -11,7 +33,7 @@ b {
 }
 
 .scroll-offset {
-  @apply scroll-mt-16 md:scroll-mt-20;
+  scroll-margin-top: 0;
 }
 
 a:hover {
@@ -19,7 +41,7 @@ a:hover {
 }
 
 .btn {
-  @apply rounded-md border-[1px] border-black px-4 pt-2 pb-1 font-[everettlight] text-2xl transition-colors;
+  @apply rounded-md border-[1px] border-black px-4 pt-2 pb-1 font-[everettlight] text-lg md:text-2xl transition-colors;
   transition-duration: 300ms;
 }
 
@@ -27,46 +49,54 @@ a:hover {
   @apply bg-black text-white;
 }
 
+.tech-list-window {
+  height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .tech-list-window {
+    height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tech-list-window {
+    height: 2.5rem;
+  }
+}
+
 ul.tech-list {
-  -webkit-animation: scrollUp 10s linear infinite normal;
-  animation: scrollUp 10s linear infinite normal;
+  -webkit-animation: scrollUp 12s ease-in-out infinite normal;
+  animation: scrollUp 12s ease-in-out infinite normal;
 }
 
 ul.tech-list > li {
-  @apply m-2.5 h-7 list-none border-b-[1px] border-black p-0 opacity-100;
+  @apply flex h-7 sm:h-7 md:h-10 list-none items-center justify-center border-b-[1px] border-black px-2 py-0 text-center opacity-100;
+  margin: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @keyframes scrollUp {
-  0% {
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
+  0%,
+  20% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
   }
-  5% {
-    -webkit-transform: translateY(-5%);
-    transform: translateY(-5%);
+  25%,
+  45% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
   }
-  26% {
-    -webkit-transform: translateY(-5%);
-    transform: translateY(-5%);
+  50%,
+  70% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
-  36% {
-    -webkit-transform: translateY(-32.5%);
-    transform: translateY(-32.5%);
-  }
-  62% {
-    -webkit-transform: translateY(-32.5%);
-    transform: translateY(-32.5%);
-  }
-  72% {
-    -webkit-transform: translateY(-60%);
-    transform: translateY(-60%);
-  }
-  95% {
-    -webkit-transform: translateY(-60%);
-    transform: translateY(-60%);
-  }
+  75%,
   100% {
-    -webkit-transform: translateY(-70%);
-    transform: translateY(-70%);
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
   }
 }

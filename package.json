@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next dev & yarn dlx wait-on -d 20000 http-get://localhost:3000/api/render && yarn dlx kill-port 3000",
+    "build": "yarn dlx tsx --tsconfig ./scripts/tsconfig.export.json --require ./scripts/stub-css.cjs scripts/export.ts",
     "deploy": "yarn build && ./deploy.sh",
     "dev": "next dev",
     "lint": "next lint",
