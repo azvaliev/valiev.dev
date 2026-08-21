@@ -4,8 +4,8 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip;
-  /* Match the fixed nav so hash links don't leave a hero sliver under it */
+  /* Only mechanism for hash offsets — do not also set scroll-margin
+     on sections or they add together and leave a hero sliver. */
   scroll-padding-top: 3rem;
 }
 
@@ -18,6 +18,14 @@ html {
 body {
   overflow-x: clip;
   max-width: 100%;
+  background-color: #fff;
+  scroll-padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    scroll-padding-top: 4rem;
+  }
 }
 
 b {
@@ -25,13 +33,7 @@ b {
 }
 
 .scroll-offset {
-  scroll-margin-top: 3rem;
-}
-
-@media (min-width: 768px) {
-  .scroll-offset {
-    scroll-margin-top: 4rem;
-  }
+  scroll-margin-top: 0;
 }
 
 a:hover {

@@ -63,6 +63,7 @@ function Home (): JSX.Element {
           </div>
         </div>
       </main>
+      <div className="relative z-10 bg-white">
       <Section
         id="featured"
         className="flex flex-col justify-center text-center w-[90%] md:w-[70%] lg:w-1/2 mx-auto text-xl font-light scroll-offset"
@@ -137,6 +138,7 @@ function Home (): JSX.Element {
           </a>
         </p>
       </Section>
+      </div>
     </>
   )
 }

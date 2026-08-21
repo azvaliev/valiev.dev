@@ -7,7 +7,7 @@ export const NAVBAR_FIXED_HEIGHT = '3rem';
 function Navbar({ items: navitems }: NavbarProps): JSX.Element {
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 flex w-full h-12 md:h-16 bg-[hsla(0,0%,100%,.88)] items-center justify-between md:justify-end md:gap-8 px-4 z-50">
+      <nav className="fixed top-0 left-0 right-0 flex w-full h-12 md:h-16 bg-white items-center justify-between md:justify-end md:gap-8 px-4 z-50">
         {navitems.map((item) => (
           <a href={item.link} key={item.link} className="text-black text-sm md:text-2xl font-[everettlight] md:font-[everettthin] h-full flex items-center whitespace-nowrap shrink-0">
             {item.text}
