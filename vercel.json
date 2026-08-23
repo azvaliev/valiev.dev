@@ -2,8 +2,74 @@
   "framework": null,
   "buildCommand": "yarn build",
   "outputDirectory": "dist",
-  "rewrites": [{
-    "source": "/portfolio",
-    "destination": "/portfolio.html"
-  }]
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": "(.*)text/markdown(.*)"
+        }
+      ],
+      "destination": "/index.md"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept",
+          "value": "(.*)text/markdown(.*)"
+        }
+      ],
+      "destination": "/:path.md"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/portfolio.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Vary", "value": "Accept, Accept-Encoding" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Vary", "value": "Accept, Accept-Encoding" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/resume.docx",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
+  ]
 }

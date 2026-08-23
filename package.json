@@ -7,7 +7,9 @@
     "deploy": "yarn build && ./deploy.sh",
     "dev": "next dev",
     "lint": "next lint",
-    "tailwind": "npx tailwindcss build -i src/index.css -o ./dist/app.css --minify"
+    "tailwind": "npx tailwindcss build -i src/index.css -o ./dist/app.css --minify",
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test scripts/agent-readiness.test.mjs"
   },
   "dependencies": {
     "next": "13.0.1",

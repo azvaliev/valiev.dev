@@ -1,5 +1,5 @@
 type NavbarProps = {
-  items: Array<{ link: string, text: string }>;
+  items: ReadonlyArray<{ link: string, text: string }>;
 }
 
 export const NAVBAR_FIXED_HEIGHT = '3rem';
