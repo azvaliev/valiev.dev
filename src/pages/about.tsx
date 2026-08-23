@@ -21,8 +21,7 @@ function About(): JSX.Element {
         The through-line is the same: tools people actually use, not demos.
       </p>
       <p>
-        Fluent in English, working knowledge of Russian. Based around a US
-        professional identity (Austin, TX) while working remotely.
+        Fluent in English, working knowledge of Russian. Work remotely.
       </p>
     </Interior>
   );

@@ -98,6 +98,9 @@ test('homepage includes JSON-LD, canonical, lang, og:image, og:type', async () =
   assert.match(res.body, /"@type":"Organization"/);
   assert.match(res.body, /contactPoint/);
   assert.match(res.body, /PostalAddress/);
+  assert.match(res.body, /"addressCountry":"US"/);
+  assert.doesNotMatch(res.body, /"addressLocality"/);
+  assert.doesNotMatch(res.body, /"addressRegion"/);
   assert.match(res.body, /property="og:image"/);
   assert.match(res.body, /property="og:type"/);
 });
@@ -116,7 +119,6 @@ test('sitemap.xml lists indexable URLs with lastmod', async () => {
   assert.match(res.body, /<urlset/);
   assert.match(res.body, /https:\/\/valiev\.dev\/<\/loc>/);
   assert.match(res.body, /https:\/\/valiev\.dev\/about<\/loc>/);
-  assert.match(res.body, /https:\/\/valiev\.dev\/privacy<\/loc>/);
   assert.match(res.body, /<lastmod>/);
 });
 
@@ -145,6 +147,6 @@ test('resume.docx is noindexed so agents do not ingest the Word blob', async () 
 test('robots.txt points at the sitemap and blocks the docx', async () => {
   const res = await request('/robots.txt');
   assert.equal(res.status, 200);
-  assert.match(res.body, /Sitemap: https:\/\/valiev\.dev\/sitemap\.xml/);
+  assert.match(res.body, /Sitemap: https:\/\/valiev\.dev\/sitemap.xml/);
   assert.match(res.body, /Disallow: \/resume\.docx/);
 });

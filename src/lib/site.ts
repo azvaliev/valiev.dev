@@ -129,8 +129,6 @@ export function jsonLdGraph(): Record<string, unknown> {
         sameAs: [...SAME_AS],
         address: {
           '@type': 'PostalAddress',
-          addressLocality: 'Austin',
-          addressRegion: 'TX',
           addressCountry: 'US',
         },
       },
@@ -158,8 +156,6 @@ export function jsonLdGraph(): Record<string, unknown> {
         },
         address: {
           '@type': 'PostalAddress',
-          addressLocality: 'Austin',
-          addressRegion: 'TX',
           addressCountry: 'US',
         },
       },
