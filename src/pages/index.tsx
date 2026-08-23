@@ -1,29 +1,16 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Section from "../components/section";
 import Testimonials from "../components/testimonials";
 import Timeline from "../components/timeline";
-
-const navitems = [
-{
-  link: '#featured',
-  text: 'Featured'
-},{
-  link: '#experience',
-  text: 'Experience'
-},{
-  link: '#about',
-  text: 'About',
-}, {
-  link: '#contact',
-  text: 'Contact',
-}];
+import { NAV_ITEMS } from "../lib/site";
 
 function Home (): JSX.Element {
   return (
     <>
-      <Navbar items={navitems} />
+      <Navbar items={[...NAV_ITEMS]} />
       <main className="relative flex h-[calc(100svh-3rem)] md:h-[calc(100svh-4rem)] w-full overflow-hidden">
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <img
@@ -138,6 +125,7 @@ function Home (): JSX.Element {
           </a>
         </p>
       </Section>
+      <Footer />
       </div>
     </>
   )

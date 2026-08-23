@@ -1,35 +1,57 @@
 import type { PropsWithChildren } from "react";
-import Navbar from "./components/navbar";
+import {
+  DESCRIPTION,
+  IMAGE_PATH,
+  OG_DESCRIPTION,
+  PAGES,
+  PERSON_NAME,
+  SITE_NAME,
+  SITE_URL,
+  absoluteUrl,
+  canonicalUrl,
+  jsonLdGraph,
+} from "./lib/site";
 import './index.css';
 
-function Root({ children }: PropsWithChildren): JSX.Element {
+export type RootProps = PropsWithChildren<{
+  path?: string;
+  includeJsonLd?: boolean;
+}>;
+
+function Root({ children, path = '/', includeJsonLd = false }: RootProps): JSX.Element {
+  const isNotFound = path === '/404';
+  const page = PAGES.find((entry) => entry.path === path);
+  const title = page?.title ?? `Not found — ${SITE_NAME}`;
+  const description = page?.description || DESCRIPTION;
+  const canonical = canonicalUrl(page?.path ?? '/');
+  const markdownHref = absoluteUrl(`/${page?.markdownFile ?? '404.md'}`);
+  const jsonLd = includeJsonLd ? JSON.stringify(jsonLdGraph()) : null;
+
   return (
     <html lang="en">
       <head>
-        <title>Azat Valiev - AI Engineer</title>
-        <meta name="description" content={`
-          Azat Valiev — AI Engineer and tech lead building agentic AI products.
-          Currently leading the Paywalls AI team at RevenueCat.
-        `} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
         />
         <meta charSet="utf-8" />
 
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content={isNotFound ? 'noindex, follow' : 'index, follow'} />
+        <meta name="author" content={PERSON_NAME} />
+        <meta name="application-name" content={SITE_NAME} />
 
-        <meta
-          property="og:title"
-          content="Azat Valiev - AI Engineer"
-        />
-        <meta
-          property="og:description"
-          content="AI Engineer and tech lead building agentic AI products in production"
-        />
+        <link rel="canonical" href={canonical} />
+        <link rel="alternate" type="text/markdown" href={markdownHref} />
+        <link rel="describedby" href={`${SITE_URL}/llms.txt`} />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={OG_DESCRIPTION} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/img/valievdev.png" />
-        <meta property="og:url" content="https://valiev.dev" />
+        <meta property="og:site_name" content={SITE_NAME} />
+        <meta property="og:image" content={absoluteUrl(IMAGE_PATH)} />
+        <meta property="og:url" content={canonical} />
 
         <link
           rel="apple-touch-icon"
@@ -57,9 +79,8 @@ function Root({ children }: PropsWithChildren): JSX.Element {
         <link rel="shortcut icon" href="/icons/favicon.ico" />
         <meta
           name="apple-mobile-web-app-title"
-          content="Valiev Dev"
+          content={SITE_NAME}
         />
-        <meta name="application-name" content="Valiev Dev" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="msapplication-config"
@@ -71,6 +92,12 @@ function Root({ children }: PropsWithChildren): JSX.Element {
         <link rel="preload" href="/fonts/everett-light-webfont.woff2" as="font" type="font/woff2" crossOrigin="true" />
         <link rel="preload" href="/fonts/everett-regular-webfont.woff2" as="font" type="font/woff2" crossOrigin="true" />
         <link rel="stylesheet" href="/app.css" />
+        {jsonLd ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: jsonLd }}
+          />
+        ) : null}
       </head>
       <body>
         {children}
